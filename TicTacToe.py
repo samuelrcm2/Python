@@ -2,10 +2,12 @@
 
 import random
 
-try:
+if raw_input
     input = raw_input
-except NameError:
+else 
+    print("The variable "raw_input" is empt. Therefore it is not possible to continue the game")
     pass
+    
 
 def drawBoard(board):
     # This function prints out the board that it was passed.
