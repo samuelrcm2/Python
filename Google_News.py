@@ -4,7 +4,7 @@ import ssl
 from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen
 
-def news(xml_news_url):
+def printNewsWithXml(xml_news_url):
 
     '''Print select details from a html response containing xml
       @param xml_news_url: url to parse
@@ -30,5 +30,5 @@ news_url="https://news.google.com/news/rss/?ned=us&gl=US&hl=en"
 sports_url="https://news.google.com/news/rss/headlines/section/topic/SPORTS.en_in/Sports?ned=in&hl=en-IN&gl=IN"
 
 #now call news function with any of these url or BOTH
-news(news_url)
-news(sports_url)
+printNewsWithXml(news_url)
+printNewsWithXml(sports_url)
